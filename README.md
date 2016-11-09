@@ -23,7 +23,7 @@ const nmap = require("nmap");
 nmap(4, () => 0);
 // → [ 0, 0, 0, 0 ]
 
-nmap(4, (_, i) => i);
+nmap(4, i => i);
 // → [ 0, 1, 2, 3 ];
 ```
 
